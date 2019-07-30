@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Django Central</title>
+    <title>Space A</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
@@ -22,7 +22,7 @@
       body {
         font-family: "Roboto", sans-serif;
         font-size: 17px;
-        background-color: #fdfdfd;
+        background-image: url('https://wallpaperplay.com/walls/full/7/2/9/17340.jpg');
       }
 
     .shadow{
@@ -41,62 +41,55 @@
               box-shadow: 0 16px 48px #E3E7EB;
               padding-top: 10px;
     }
+
+    .footer{
+           color: white;
+           }
     </style>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
+
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'home' %}" >Django central</a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-       
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            
-            <li class="nav-item text-black">
-              <a
-                class="nav-link text-black font-weight-bold"
-                href="#"
-                >About</a
-              >
-            </li>
-            <li class="nav-item text-black">
-              <a
-                class="nav-link text-black font-weight-bold"
-                href="#"
-                >Policy</a
-              >
-            </li>
-            <li class="nav-item text-black">
-              <a
-                class="nav-link text-black font-weight-bold"
-                href="#"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+        <a class="navbar-brand" href="{% url 'home' %}" ><h1>Space A</h1></a>
       </div>
-    </div>
-    </nav>
-    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Space A</a>
+      <img src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/logo.png" width="100" height="90" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://science.nasa.gov/">NASA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.spacex.com/">SpaceX</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" >About us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
 
             {% block content %} 
           <!-- Content Goes here -->
             {% endblock content %}
     
     <!-- Footer -->
-    <footer class="py-3 bg-grey">
-              <p class="m-0 text-dark text-center ">Copyright &copy; Django Central</p>
+    <footer class="py-3 bg-grey" >
+              <p class="m-0 text-dark text-center ">Copyright &copy; SHAHAD JEZA</p>
     </footer>
     
   </body>
